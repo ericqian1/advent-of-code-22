@@ -1,3 +1,5 @@
+from datetime import datetime
+
 ## Part 1
 with open("data.txt") as f:
     max_total = 0
@@ -9,9 +11,9 @@ with open("data.txt") as f:
             max_total = current_total if max_total < current_total else max_total
             current_total = 0
 
-print(current_total)
-
 ## Part 2 
+now = datetime.now()
+
 top_three = [0,0,0]
 with open("data.txt") as f:
     max_total = 0
@@ -32,6 +34,3 @@ with open("data.txt") as f:
                 del top_three[0]
             current_total = 0
             new_idx = -1
-
-print(sum(top_three))
-

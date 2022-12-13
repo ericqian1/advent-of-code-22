@@ -56,6 +56,15 @@ monkeys = {0: [61],
 		   6: [87, 69, 92, 56, 91, 93, 88, 73],
 		   7: [71, 57, 86, 67, 96, 95]}
 
+worry = {0: lambda x: x*11,
+		 1: lambda x: x+4,
+		 2: lambda x: x*19,
+		 3: lambda x: x*x,
+		 4: lambda x: x+1,
+		 5: lambda x: x+3,
+		 6: lambda x: x+8,
+		 7: lambda x: x+7}		   		   
+
 def assign(worry, moduli,i, j):
 	return i if worry[moduli]==0 else j 
 

@@ -40,7 +40,7 @@ class Directory:
 
         return self.total_size
 
-
+                  
 # Part 1: Build tree
 with open("data.txt") as f:
     root = Directory()
